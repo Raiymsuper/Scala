@@ -5,5 +5,6 @@ object Task1 {
     print("\t***\n")
     print("\t***\n")
     print("\t***\n")
+    
   }
 }
