@@ -1,14 +1,20 @@
-package Lab12
+package Lab11
 
 object Task1 {
-  def rFib(n: Int): Int={
-    if (n < 1){
-      return n
+  def countTo10(n: Int): Unit={
+    print(s"$n ")
+    if (n==10){
+      print("Stopped")
+    } else {
+      countTo10(n + 1)
     }
-    rFib(n-1) + rFib(n-2)
   }
 
   def main(args: Array[String]): Unit={
-    println(-rFib(9))
+    countTo10(1)
+    println("")
+    countTo10(-10)
+    println("")
+    countTo10(5)
   }
 }
